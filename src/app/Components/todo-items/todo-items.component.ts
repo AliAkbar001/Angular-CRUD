@@ -14,5 +14,6 @@ export class TodoItemsComponent implements OnInit {
   }
   handleClick(todo:Todo){
     this.todoDelete.emit(todo);
+    console.log("handleClick")
   }
 }
