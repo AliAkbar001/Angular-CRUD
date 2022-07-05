@@ -34,5 +34,7 @@ export class TodoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  deleteTodo(todo: Todo){
+    alert(todo)
+  }
 }
