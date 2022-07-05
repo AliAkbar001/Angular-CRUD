@@ -1,4 +1,5 @@
-<div>
+<div class="container">
+    <h1 class="text-center">Todo List</h1>
     <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
     <h4 class="text-center">Your Todos</h4>
     <div class="text-center" *ngIf="this.todos.length === 0;else elseBlock">Todo is Empty</div>
