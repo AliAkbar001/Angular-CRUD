@@ -2,9 +2,9 @@
     <h5>{{todo.title}}</h5>
     <p>{{todo.description}}</p>
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (click)="handleCheckbox(todo)">
-        <label class="form-check-label" for="flexCheckDefault">
-          Toggle Done
+        <input class="form-check-input" type="checkbox" value="" id="todoNumber{{i}}" (click)="handleCheckbox(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="todoNumber{{i}}">
+          Done
         </label>
       </div>
     <button class="btn btn-danger btn-sm" (click)="handleClick(todo)">
